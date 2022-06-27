@@ -16,6 +16,15 @@ public class Testik extends Base{
             System.out.println("not ok");
         }
     }
+@Test
+    public void Test1(){
+        driver.get("https://shakhtar.com/");
+        if (driver.getTitle().equals("Офіційний сайт ФК «Шахтар» (Донецьк)")){
+            System.out.println("It is Shakhtar site");
+        }else {
+            System.out.println("not ok");
+        }
+}
 
 
 }
